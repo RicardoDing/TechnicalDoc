@@ -15,7 +15,7 @@ import redis.clients.jedis.JedisCluster;
 public class LockRequestIdUtil {
     //设定将值在redis中保存30s
     public static boolean lock(JedisCluster jedisCluster) {
-        return lock(jedisCluster, 30, TimeUnit.MINUTES);
+        return lock(jedisCluster, 30, TimeUnit.SECONDS);
     }
 
     
